@@ -12,7 +12,7 @@ For the reward, we are awarding the bird 0.1 points for surviving every step, 10
 
 We also have a scaling_parameter, which speeds up the game so that the training is done quickly. Don't worry, the model hence the agent is independent of the scaling_parameter, which means that we can train the model at 5x speed (300 fps) and then it will run in 1x speed (60 fps by default) just fine. This is because the state variables are all independent of the scaling_factor. 
 
-We trained the model for ~18000 games in 5x speed (2-2.5 hrs), then in normal speed, in which he easily reached a high score of 60+ within 100 games. 
+We trained the model for ~18000 games in 5x speed (2-2.5 hrs), then in normal speed, in which it easily reached a high score of 60+ within 100 games. 
 The trained model is saved as .pth file after every 50 games. The same goes for scores, etc. in form of a .json file. 
 
 Any other things? Go through the code and find out! All the best!
