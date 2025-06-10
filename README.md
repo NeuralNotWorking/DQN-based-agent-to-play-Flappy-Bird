@@ -6,6 +6,7 @@ For those who don't know - DQN stands for Double Q Network, in which we just add
 We have chosen the state dimension to be 3, which includes (normalized) bird velocity and the relative positions of the bird wrt the next gap (rel y and rel x for two states).
 
 The action has dimension 2, which stands for - no action and flap(). flap() is the usual flap if the game is running, else it starts the game. 
+
 Apart from input (state) and output (action) layers, we have 3 hidden layers in the neural network, with 128,64 and 32 neurons respectively. 
 
 For the reward, we are awarding the bird 0.1 points for surviving every step, 10 points for passing a pipe and 0.1*(1-|y1-y2|/game_height) for being close to the gap (y1,y2 represent bird's and gap's y coordinates).
