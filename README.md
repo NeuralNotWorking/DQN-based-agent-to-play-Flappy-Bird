@@ -1,7 +1,7 @@
 # DQN-based-agent-to-play-Flappy-Bird
 A DQN agent trained (without explicit target network) which can play a custom pygame - implementation of the classic Flappy Bird game. No GPU needed. 
 
-For those who don't know - DQN stands for Double Q Network, in which we just add a neural network to the standard learning loop of an RL agent. The neural network approximates the Q value for all the actions at a particular state (Q stands for Quality), instead of maintaining a Q table for all states. 
+For those who don't know - DQN stands for Double Q Network, in which we just add a neural network to the standard learning loop of an RL agent. The neural network approximates the Q value for all the actions at a particular state (Q stands for Quality), instead of maintaining a Q table for all states and actions
 
 We have chosen the state dimension to be 3, which includes (normalized) bird velocity and the relative positions of the bird wrt the next gap (rel y and rel x for two states).
 
