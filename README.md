@@ -11,7 +11,7 @@ Apart from input (state) and output (action) layers, we have 3 hidden layers in 
 
 For the reward, we are awarding the bird 0.1 points for surviving every step, 10 points for passing a pipe and 0.1*(1-|y1-y2|/game_height) points for being close to the gap (y1,y2 represent bird's and gap's y coordinates).
 
-We also have a scaling_parameter, which speeds up the game so that the training is done quickly. Don't worry, the model hence the agent is independent of the scaling_parameter, which means that we can train the model at 5x speed (300 fps) and then it will run in 1x speed (60 fps by default) just fine. This is because the state variables are all independent of the scaling_factor. 
+We also have a scaling_parameter, which speeds up the game so that the training is done quickly. Don't worry, the model, hence the agent is independent of the scaling_parameter, which means that we can train the model at 5x speed (300 fps) and then it will run in 1x speed (60 fps by default) just fine. This is because the state variables are all independent of the scaling_factor. 
 
 We trained the model for ~18000 games in 5x speed (2-2.5 hrs), then in normal speed, in which it easily reached a high score of 60+ within 100 games. 
 The trained model is saved as .pth file after every 50 games. The same goes for scores, etc. in form of a .json file. 
